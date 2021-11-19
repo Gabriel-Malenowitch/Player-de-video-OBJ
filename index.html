@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Player de vídeo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow-y: hidden;
+        }
+        .video{
+            width: 100%;
+        }
+        #divVideo{
+            background-color: rgb(221, 161, 81);
+            border-radius: 5px;
+            padding: 5px;
+            margin: 20px;
+        }
+        .controls{
+            height: 50px;
+            background-color: blueviolet;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .controls:nth-child(1){
+            margin: 4px;
+        }
+        .controls:nth-child(2){
+            margin: 4px;
+        }
+        .controls:nth-child(3){
+            margin: 4px;
+        }
+        .controls:nth-child(4){
+            margin: 4px;
+        }
+        i{
+            color: white;
+        }
+        .visible{
+            visibility: visible; z-index: 50;
+            width: auto; height: auto;
+            position: static;
+        }
+        .invisible{
+            visibility: hidden; z-index: -50;
+            width: 0px; height: 0px;
+            position: absolute;
+        }
+        .pp{
+            padding: 10px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.2s linear;
+        }
+        .pp:hover{
+            background-color: rgba(163, 84, 236, 0.486);
+        }
+    </style>
+</head>
+<body>
+    <div id="divVideo"></div>
+    <script type="module" src="scripts/index.js"></script>
+</body>
+</html>
