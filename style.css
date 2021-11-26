@@ -1,0 +1,73 @@
+.video{
+    width: 100%;
+
+}
+#divVideo{
+    background-color: rgb(221, 161, 81);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px;
+    color: white;
+    width: 1200px;
+}
+.controls{
+    height: 50px;
+    background-color: blueviolet;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+.controlsContainersLeft span{
+    margin: 4px;
+}
+.controlsContainersRight span{
+    margin: 4px;
+}
+.timeRange{
+    width: 98%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.visible{
+    visibility: visible; z-index: 50;
+    width: auto; height: auto;
+    position: static;
+}
+.invisible{
+    visibility: hidden; z-index: -50;
+    width: 0px; height: 0px;
+    position: absolute;
+}
+.controls i{
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.pp{
+    padding: 10px;
+    border-radius: 50px;
+}
+.pp:hover{
+    background-color: rgba(163, 84, 236, 0.486);
+}
+.controlsContainersLeft, .controlsContainersRight{
+    display: flex;
+    align-items: center;
+}
+.timeRange, .soundRange{
+    -webkit-appearance: none;
+}
+.timeRange::-webkit-slider-runnable-track,
+.soundRange::-webkit-slider-runnable-track{
+    background-color: rgb(69, 7, 170);   
+}
+.timeRange::-webkit-slider-thumb, 
+.soundRange::-webkit-slider-thumb {
+appearance: none;
+background-color: chocolate;
+height: 10px;
+width: 10px;
+border-radius: 20px;
+}
